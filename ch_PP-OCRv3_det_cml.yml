@@ -199,12 +199,12 @@ Train:
     num_workers: 4
 
 Eval:
-  dataset:
+  dataset: 
     name: SimpleDataSet
     data_dir: ./train_data/icdar2015/text_localization/
     label_file_list:
       - ./train_data/icdar2015/text_localization/test_icdar2015_label.txt
-    transforms:
+    transforms: 
     - DecodeImage: # load image
         img_mode: BGR
         channel_first: False
