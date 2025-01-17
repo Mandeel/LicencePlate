@@ -78,7 +78,8 @@ Train:
     name: SimpleDataSet
     data_dir: /content/gdrive/MyDrive/license_plate_detection_results/license_plate_cropped_images
     ext_op_transform_idx: 1
-    label_file_list: /content/gdrive/MyDrive/license_plate_detection_results/annotations.txt
+    label_file_list: 
+    - /content/gdrive/MyDrive/license_plate_detection_results/annotations.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -107,7 +108,8 @@ Eval:
   dataset:
     name: SimpleDataSet
     data_dir: /content/gdrive/MyDrive/license_plate_detection_results/license_plate_cropped_images
-    label_file_list: /content/gdrive/MyDrive/license_plate_detection_results/annotations.txt
+    label_file_list: 
+    - /content/gdrive/MyDrive/license_plate_detection_results/annotations.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
